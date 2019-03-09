@@ -1,0 +1,12 @@
+<?php
+
+    class Productos {
+        private 
+    }
+
+
+
+
+
+
+?>
