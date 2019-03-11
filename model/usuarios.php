@@ -1,4 +1,11 @@
 <?php
+// file: /model/usuarios.php
+
+     /**
+     * Clase Usuario
+     * 
+     * Contiene el objeto Usuario, perteneciente a la tabla Usuarios de la base de datos
+     */
 
     class Usuario
     {
@@ -14,7 +21,7 @@
         * @var string
         */
 
-        private $nick;
+        private $login;
 
         /**
         * Contraseña del usuario
@@ -59,16 +66,16 @@
         private $email;
 
         
-        public function __construct($id = NULL, $nick = NULL, $pass = NULL, $tipo = NULL, $nombre = NULL, $apellido_1 = NULL, $apellido_2 = NULL, $email = NULL)
+        public function __construct($id = NULL, $login = NULL, $pass = NULL, $tipo = NULL, $nombre = NULL, $apellido_1 = NULL, $apellido_2 = NULL, $email = NULL)
         {
-            $this->id = $id;
-            $this->nick = $nick;
-            $this->pass = $pass;
-            $this->tipo = $tipo;
-            $this->nombre = $nombre;
+            $this->id         = $id;
+            $this->login      = $login;
+            $this->pass       = $pass;
+            $this->tipo       = $tipo;
+            $this->nombre     = $nombre;
             $this->apellido_1 = $apellido_1;
             $this->apellido_2 = $apellido_2;
-            $this->email = $email;
+            $this->email      = $email;
         }
 
         /**
@@ -83,23 +90,23 @@
 
 
         /**
-        * Devuelve el Nick del Usuario
+        * Devuelve el Login del Usuario
         * @return string
         */
 
-        public function getNick()
+        public function getLogin()
         {
-            return $this->nick;
+            return $this->login;
         }
 
         /**
-        * Cambia el valor del Nick del Usuario
+        * Cambia el valor del login del Usuario
         * @return void
         */
 
-        public function setNick($nick)
+        public function setLogin($login)
         {
-            $this->nick = $nick;
+            $this->login = $login;
         }
 
 

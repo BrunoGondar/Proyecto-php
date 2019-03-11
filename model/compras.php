@@ -1,5 +1,12 @@
 <?php
+// file: /model/compras.php
 
+    /**
+     * Clase Compra
+     * 
+     * Contiene el objeto Compra, perteneciente a la tabla Compras de la base de datos
+     */
+    
     class Compra
     {
         /**

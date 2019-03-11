@@ -1,5 +1,12 @@
 <?php
+// file: /model/proveedores.php
 
+    /**
+     * Clase Proveedor
+     * 
+     * Contiene el objeto Proveedor, perteneciente a la tabla proveedores de la base de datos
+     */
+    
     class Proveedor
     {
         /**
